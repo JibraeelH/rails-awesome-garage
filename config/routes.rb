@@ -8,5 +8,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
+
+  #verb path/url to: contoller#action
   get "cars", to: "cars#index"
+  get "cars/:id", to: "cars#show", as: :car
 end

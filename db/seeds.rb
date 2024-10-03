@@ -15,4 +15,4 @@ owner1 = Owner.create(nickname: "Geoffrey")
 owner2 = Owner.create(nickname: "Billy")
 
 Car.create(brand: "Mercedes-Benz", model: "G-Class", year: 2010, fuel: "Petrol", owner: owner1)
-Car.create(brand: "Mercedes-Benz", model: "A-Class", year: 2016, fuel: "Diesel", owner: owner2)
+Car.create(brand: "BMercedes-Benzley", model: "A-Class", year: 2016, fuel: "Diesel", owner: owner2)
