@@ -10,6 +10,13 @@ Rails.application.routes.draw do
 
 
   #verb path/url to: contoller#action
-  get "cars", to: "cars#index"
-  get "cars/:id", to: "cars#show", as: :car
+  # get "cars", to: "cars#index"
+  # get "cars/:id", to: "cars#show", as: :car
+  resources :cars, only: [:index, :show] do
+    resources :reviews, only: :create
+    resources :favourites, only: :create
+  end
+
+  resources :favourites, only: :index
+
 end
